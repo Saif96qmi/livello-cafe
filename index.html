@@ -1,0 +1,2815 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Livello Café</title>
+		<meta charset="utf-8" />
+    <link rel="icon" href="images/logo3.png" type="png">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<style>
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+/*  */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+</style>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header" class="w3-top w3-padding">
+						<div class="logo" style="border-radius: 20px 20px;">
+							<img src="images/logo.png" style="max-width:100%;margin-bottom: 5px;">
+						</div>
+						<div class="content">
+              <div class="w3-padding">
+<button id="ar" class="translate w3-round w3-small w3-hover w3-hover-red w3-text-black w3-border w3-border-black" style="box-shadow: 3px 3px  black;background-color: white;font-weight: bold;">العربية</button>
+<button id="en" class="translate w3-round w3-small w3-hover w3-hover-red w3-text-black w3-border w3-border-black w3-serif" style="box-shadow: 3px 3px  black;background-color: white;font-weight: bold;">English</button>
+</div>
+              <img src="images/it.png" style="width: 15px">
+							<span style="font-family: fantasy;">Cafe, Desserts, Pizza</span>
+
+							<ul class="icons w3-padding">
+                  <li><a href="https://wa.me/+96891936111" class="fa fa-whatsapp"></a></li>
+									<li><a href="https://www.instagram.com/livello.cafe/" class="fa fa-instagram"></a></li>
+									<li><a href="tel:+96891936111" class="fa fa-phone"></a></li>
+									<li><a href="https://www.google.com/maps/place/Livello+cafe/@24.3646485,56.7445765,17z/data=!3m1!4b1!4m6!3m5!1s0x3e8b5b1433bc5ce5:0x80551eecc274c7e!8m2!3d24.3646437!4d56.7490612!16s%2Fg%2F11t9cftwqq?hl=en-OM" class="fa fa-map-marker"></a></li>
+								</ul>
+
+							<div class="inner">
+                              <div class="w3-container"><!---Order button-->
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="lang w3-button w3-border w3-round-large fa fa-shopping-cart" style="box-shadow: 3px 3px 3px white;border-radius: 15px 5px;font-weight: bold;" key="ord">    إضغط للطلب</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-xxlarge" style="max-width:600px;background-color: #5b5d65;">
+
+          <img class="w3-padding" src="images/logo.png" style="width:100px">
+
+      <div class="w3-center">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-red w3-round-large w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <form
+  action="https://formspree.io/f/xdoveeyy"
+  method="POST"
+>
+        
+
+<!---1-Pizza--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo1')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="piz">البيتزا</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo1" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="piz/pap1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Paparoni pizza<br>بيتزا الباباروني
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.500</span>
+          <select name="Paparoni pizza | بيتزا الباباروني | 3.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="piz/che2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Cheese pizza<br>بيتزا الاجبان
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.500</span>
+          <select name="Cheese pizza | بيتزا الاجبان | 3.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="piz/tru3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Truffle pizza
+        <br>ترافيل بيتزا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">4.000</span>
+          <select name="Truffle pizza | ترافيل بيتزا | 4.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="piz/veg4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Vegetable pizza<br>بيتزا بالخضار
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.500</span>
+          <select name="Vegetable pizza | بيتزا بالخضار | 3.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw3-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="piz/mar5.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Margarita<br>مارجريتا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.000</span>
+          <select name="Margarita | مارجريتا | 3.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="piz/chi11.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Chicken musakhan<br>مسخن دجاج
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.800</span>
+          <select name="Chicken musakhan | مسخن دجاج | 3.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw4-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="piz/chi7.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Chicken mushroom pizza<br>مشروم دجاج بيتزا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.800</span>
+          <select name="Chicken mushroom pizza | مشروم دجاج بيتزا | 3.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="piz/smo8.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Smoked beef pizza<br>بيتزا لحم مدخن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">4.000</span>
+          <select name="Smoked beef pizza | بيتزا لحم مدخن | 4.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw5-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="piz/sea9.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Cheetos chicken<br>بيتزا دجاج شيتوز
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.800</span>
+          <select name="Cheetos chicken | بيتزا دجاج شيتوز | 3.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="piz/smo10.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Butter chicken<br>بيتزا دجاج بالزبدة
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.800</span>
+          <select name="SButter chicken | بيتزا دجاج بالزبدة | 3.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw6-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="piz/sea9.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Seafood pizza<br>بيتزا بحري
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">4.000</span>
+          <select name="Seafood pizza | بيتزا بحري | 4.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="piz/smo10.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Smoked chicken pizza<br>بيتزا دجاج مدخن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">4.000</span>
+          <select name="Smoked chicken pizza | بيتزا دجاج مدخن | 4.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw7-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="piz/sea9.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Pesto pizza<br>بيستو بيتزا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.500</span>
+          <select name="Pesto pizza | بيستو بيتزا | 3.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        <br>
+        <br>
+        <span class="lang w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px" key="add">إظافة دجاج | 0.500<br></span>
+        <br>
+          <select name="Add chicken to pesto pizza | إظافة دجاج لبيستو بيتزا | 0.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="نعم \ Yes">نعم \ Yes</option>
+          <option value="لا / No">لا \ No</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+        <img class="w3-round-large" src="piz/smo10.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Meat pizza<br>بيتزا لحم
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.500</span>
+          <select name="SMeat pizza | يتزا لحم | 3.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+
+
+     </div>
+     </div>
+  <br>
+ 
+
+     </div>
+     </div>
+  <br>
+
+<!---2-Pasta--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo2')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="pas">الباستا</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo2" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="pas/whi1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">White sauce chicken<br>باستا وايت صوص دجاج
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="White sauce chicken | باستا وايت صوص دجاج | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="pas/red2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Red sauce chicken<br>باستا رد صوص دجاج
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Red sauce chicken | باستا رد صوص دجاج | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="pas/pes3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Pasta pesto<br>بيستو باستا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Pasta pesto | بيستو باستا| 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="pas/tru4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Truffle pasta<br>ترافيل باستا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Truffle pasta | ترافيل باستا | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw3-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="pas/las5.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Lasagna<br>لازانيا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Lasagna | لازانيا | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column"> 
+
+     </div>
+     </div>
+  <br>
+
+
+ 
+
+     </div>
+     </div>
+  <br>
+
+<!---3-Pie--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo3')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="pie">الفطائر</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo3" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="pie/che1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Cheese cheetos pie<br>فطيرة شيتوز جبن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Cheese cheetos pie | فطيرة شيتوز جبن | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="pie/che5.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Honey cheese pie<br>فطيرة جبن عسل
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Honey cheese pie | فطيرة جبن عسل | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="pie/lab3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Labneh thyme pie<br>فطيرة لبنه بالزعتر
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Labneh thyme pie | فطيرة لبنه بالزعتر | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="pie/lab4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Labneh olive pie<br>فطيرة لبنه زيتون
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Labneh olive pie | فطيرة لبنه زيتون | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+
+
+
+ 
+
+     </div>
+     </div>
+  <br>
+
+<!---4-Rositto--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo4')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="rai">ريزوتو</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo4" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="rai/shr1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Shrimp <br>risotto<br>ريزوتو روبيان
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.000</span>
+          <select name="Shrimp risotto | ريزوتو روبيان | 3.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="rai/saf2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Saffron chicken <br>risotto<br>زعفران ريزوتو دجاج
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.000</span>
+          <select name="Saffron chicken risotto | زعفران ريزوتو دجاج | 3.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="rai/pes3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Pesto chicken risotto<br>بيستو ريزوتو دجاج
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.000</span>
+          <select name="Pesto chicken risotto | بيستو ريزوتو دجاج | 3.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+
+
+     </div>
+     </div>
+  <br>
+
+
+ 
+
+     </div>
+     </div>
+  <br>
+
+<!---5-Breakfast--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo5')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="bre">وجبات الإفطار</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo5" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="bre/1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Egg with tomato<br>sauce<br>بيض مع صلصة الطماطم
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.500</span>
+          <select name="Egg with tomato sauce | بيض مع صلصة الطماطم | 1.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="bre/2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Pepperoni mozzarella<br>cheese<br>الببروني مع الموزريلا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.500</span>
+          <select name="Pepperoni mozzarella | الببروني مع الموزريلا | 1.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="bre/3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Egg pepperoni<br>بيض مع الببروني والمزريلا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.500</span>
+          <select name="Egg pepperoni | بيض مع الببروني والمزريلا | 1.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="bre/4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Chicken liver platter<br>طبق كبدة الدجاج
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="Chicken liver platter | طبق كبدة الدجاج | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw3-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="bre/5.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Grilled chicken platter<br>طبق الدجاج المشوي
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="Grilled chicken platter | طبق الدجاج المشوي | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="bre/6.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Chicken musakhan<br>طبق مسخن الدجاج
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="Chicken musakhan | طبق مسخن الدجاج | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw4-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="bre/7.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Minced meat <br>platter<br>طبق لحم مفروم
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="Minced meat platter | طبق لحم مفروم | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="bre/8.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Pesto eggs with<br>cheese<br>بيض البيستو بالجبن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Pesto eggs with cheese | بيض البيستو بالجبن | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw5-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="bre/9.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Traffil eggs with cheese<br>بيض الترفيل بالجبن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Traffil eggs with cheese | بيض الترفيل بالجبن | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+            <img class="w3-round-large" src="rai/1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Simit pepperoni<br>سميد ببروني
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Simit pepperoni | سميد ببروني | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw6-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="rai/2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Simit chicken<br>musakhan<br>سميد دجاج مسخن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Simit chicken musakhan | سميد دجاج مسخن | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="rai/3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Smoked chicken<br>Simit<br>سميد دجاج مدخن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Smoked chicken simit | سميد دجاج مدخن | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw7-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="rai/4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Grilled chicken<br>Simit<br>سميد الدجاج المشوي
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Grilled chicken simit | سميد الدجاج المشوي | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="rai/5.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Simit eggs, labneh<br>and thyme<br>سميد بيض لبنه وزعتر
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Simit eggs, labneh and thyme | سميد بيض لبنه وزعتر | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw8-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="bre/111.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Sunny eggs tray<br>صينية بيض عيون
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">4.000</span>
+          <select name="Sunny eggs tray | صينية بيض عيون | 4.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="bre/222.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Shakshuka egg tray<br>صينية بيض شكشوك
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">4.000</span>
+          <select name="Shakshuka egg tray | صينية بيض شكشوك | 4.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw8-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="bre/333.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Meat tray<br>صينية اللحوم
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">4.000</span>
+          <select name="Meat tray | صينية اللحوم | 4.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+
+
+     </div>
+     </div>
+  <br>
+
+
+
+
+
+ 
+
+     </div>
+     </div>
+  <br>
+
+<!---6-Appetizers--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo6')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="app">المقبلات</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo6" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="app/cri1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Crispy Seafood<br>بحري مقرمش
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Crispy Seafood | بحري مقرمش | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="app/sal2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Quinoa salad<br>سلطة الكينوا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Quinoa salad | سلطة الكينوا | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="app/sal3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Caesar salad<br>سلطة سيزر
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Caesar salad | سلطة سيزر | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="app/fri4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Cheese fries<br>بطاطا الجبن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.000</span>
+          <select name="Cheese fries | بطاطا الجبن | 2.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+
+ 
+
+     </div>
+     </div>
+  <br>
+
+<!---7-Sweets--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo7')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="swe">الحلويات</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo7" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="swe/pas1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Passion san sebastian<br>سان سباستيان باشن
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Passion san sebastian | سان سباستيان باشن | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="swe/che2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Cherry san sebastian<br>سان سباستيان كرز
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Cherry san sebastian | سان سباستيان كرز | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="swe/str3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Strawberry san sebastian<br>سان سباستيان فراولة
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Strawberry san sebastian | سان سباستيان فراولة | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="swe/coc4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Coconut milk cake<br>كيك حليب جوز الهند
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">2.500</span>
+          <select name="Coconut milk cake | كيك حليب جوز الهند | 2.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw3-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="swe/tir5.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Tiramisu<br>تراميسو
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.000</span>
+          <select name="Tiramisu | تراميسو | 3.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="swe/fru6.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Fruits tiramisu<br>تيراميسو الفواكة
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">3.000</span>
+          <select name="Fruits tiramisu | تيراميسو الفواكة | 3.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+
+
+     </div>
+     </div>
+  <br>
+
+<!---8-Coffee--->
+        <div class="w3-container">
+    <span onclick="myFunction('Demo8')" class="w3-btn w3-block w3-round-large" style="background-color: #ffffff;font-weight: bold;"><span class="lang w3-white w3-serif"key="cof">القهوة</span><img class="w3-right" src="images/drop.png" style="width:20px"></span>
+
+  <div id="Demo8" class="w3-hide w3-container w3-center w3-round-large" style="background-color:#F5F5F5">
+    <br>
+  <!-- Photo Grid Raw1-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="cof/col/spa1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Spanish Latte<br>اسبنش لاتيه
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="Spanish Latte | اسبنش لاتيه | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        <br>
+        <span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">ساخن / بارد</span>
+          <select name="Spanish Latte (Hot / Cold) | اسبنش لاتيه (حار / بارد)" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="بارد">بارد</option>
+          <option value="حار">حار</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="cof/col/lat2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Latte<br>لاتيه
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.600</span>
+          <select name="Latte | لاتيه | 1.600" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        <br>
+        <span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">ساخن / بارد</span>
+          <select name="Latte (Hot / Cold) | لاتيه (حار / بارد)" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="بارد">بارد</option>
+          <option value="حار">حار</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw2-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="cof/col/moc3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">White Mocha<br>وايت موكا
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="White Mocha | وايت موكا | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="cof/col/amr4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Ice Americano<br>آيس امريكانو
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.200</span>
+          <select name="Ice Americano | آيس امريكانو | 1.200" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw3-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="cof/hot/pic1.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Piccolo<br>بيكولو
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.500</span>
+          <select name="Piccolo | بيكولو | 1.500" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="cof/hot/cur2.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Classic Curtado<br>كلاسيك كورتادو
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="Classic Curtado | كلاسيك كورتادو | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw4-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="cof/hot/fla3.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Flat White<br>فلات وايت
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.800</span>
+          <select name="Flat White | فلات وايت | 1.800" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+      <img class="w3-round-large" src="cof/hot/esp4.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Espresso<br>اسبريسو
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.000</span>
+          <select name="Espresso | اسبريسو | 1.000" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+        </div>
+        </div>  
+
+     </div>
+     </div>
+  <br>
+
+  <!-- Photo Grid Raw4-->
+    <div class="row"> 
+      <div class="column">
+      <img class="w3-round-large" src="cof/hot/bla5.png" style="width:60px;border-radius:15px 5px">
+        <div><span class="w3-center w3-text-black w3-tiny">Black Coffee<br>بلاك كوفي
+        <div><span class="w3-tag w3-round-large" style="background-color:#000000;border-radius:7px 2px">1.200</span>
+          <select name="Black Coffee | بلاك كوفي | 1.200" class="w3-text-black w3-center w3-round-large w3-border w3-border-black" style="font-size: 15px;background-color: grey;box-shadow: 3px 3px black;">
+          <option value="">&#9661;</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+        </span>
+      </div>
+    </div>
+
+
+      </div>
+      <div class="column">
+
+
+     </div>
+     </div>
+  <br>
+
+
+
+
+
+     </div>
+     </div>
+  <br>
+
+
+
+
+
+
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-round-large w3-xxlarge fa fa-phone"></i>
+  </div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border w3-text-black w3-border-black w3-round-large" name="phone | رقم الهاتف" type="text"  placeholder="الرجاء إدخال رقم الهاتف *">
+    </div>
+  </div>
+        
+        
+      
+        <div class="w3-padding">
+  <input class="w3-large w3-round-large w3-text-black" type="submit" value="إرسال الطلب" style="background-color:grey;box-shadow: 5px 5px 4px black">
+</div>
+      </form>
+
+      
+
+    </div>
+  </div>
+</div>
+              </div>
+            </div><!----End of order button-->
+
+<!------------------------------------------------------------------------->
+				<!-- Footer -->
+					<footer id="footer">
+
+            <div class="row"> 
+  <div class="column">
+
+
+<!--7-Pastries (id07)-->
+<div class="container">
+  <img class="w3-round-large" src="pas.png" onclick="document.getElementById('id07').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="pas" onclick="document.getElementById('id07').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">الباستا</div>
+
+    <div id="id07" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;White sauce chicken<br>باستا وايت صوص دجاج</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pas/whi1.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp;Red sauce chicken<br>باستا رد صوص دجاج</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pas/red2.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                 <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;Pasta pesto<br>بيستو باستا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pas/pes3.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10105;&nbsp;Truffle pasta<br>ترافيل باستا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pas/tru4.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                  </h>
+                  <hr>
+
+                   <h>
+                  <span class="w3-left w3-margin-left">&#10106;&nbsp;Lasagna<br>لازانيا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pas/las5.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                
+
+              
+
+                
+                
+                
+                <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--9-Pie(id9)-->
+<div class="container">
+  <img class="w3-round-large" src="pie.png" onclick="document.getElementById('id9').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="pie" onclick="document.getElementById('id9').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">الفطائر</div>
+
+    <div id="id9" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id9').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+
+                    <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;Cheese cheetos pie<br>فطيرة شيتوز جبن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pie/che1.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp;Labneh thyme pie<br>فطيرة لبنه بالزعتر</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pie/lab3.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;Labneh olive pie<br>فطيرة لبنه زيتون</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pie/lab4.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10105;&nbsp;Honey cheese pie<br>فطيرة جبن عسل</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pie/che5.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                
+
+                <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--6-Apptizers (id06)-->
+<div class="container">
+  <img class="w3-round-large" src="app.png" onclick="document.getElementById('id06').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="app" onclick="document.getElementById('id06').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">المقبلات</div>
+
+    <div id="id06" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;Crispy Seafood<br>بحري مقرمش</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="app/cri1.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp;Quinoa salad<br>سلطة الكينوا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="app/sal2.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;Caesar salad<br>سلطة سيزر</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="app/sal3.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10105;&nbsp;Cheese fries<br>بطاطا الجبن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="app/fri4.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.000</span>
+                  <br>
+                  <br>
+                </h>
+          
+
+                
+                
+                
+                <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--5-Sweets (id05)-->
+<div class="container">
+  <img class="w3-round-large" src="swe.png" onclick="document.getElementById('id05').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="swe" onclick="document.getElementById('id05').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">الحلويات</div>
+
+    <div id="id05" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;Passion san sebastian<br>سان سباستيان باشن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="swe/pas1.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.500</span>
+                  <br>
+                  <br>
+                 </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp;Cherry san sebastian<br>سان سباستيان كرز</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="swe/che2.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.500</span>
+                  <br>
+                  <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;Strawberry san sebastian<br>سان سباستيان فراولة</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="swe/str3.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.500</span>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+                  
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10105;&nbsp;Coconut milk cake<br>كيك حليب جوز الهند</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="swe/coc4.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                 <h>
+                  <span class="w3-left w3-margin-left">&#10106;&nbsp;Tiramisu<br>تراميسو</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="swe/tir5.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">3.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10107;&nbsp;Fruits tiramisu<br>تيراميسو الفواكة</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="swe/fru6.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">3.000</span>
+                  <br>
+                  <br>
+                </h>
+
+                
+                
+                
+                <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  </div>
+  <div class="column">
+
+<!--8-Pizza (id08)-->
+<div class="container">
+  <img class="w3-round-large" src="piz.png" onclick="document.getElementById('id08').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="piz" onclick="document.getElementById('id08').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">البيتزا</div>
+
+    <div id="id08" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;Paparoni pizza<br>بيتزا الباباروني</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/pap1.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp;Cheese pizza<br>بيتزا الاجبان</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/che2.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;Truffle pizza<br>ترافيل بيتزا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/tru3.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">4.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10105;&nbsp;Vegetable pizza<br>بيتزا بالخضار</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/veg4.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.500</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                 <h>
+                  <span class="w3-left w3-margin-left">&#10106;&nbsp;Margarita<br>مارجريتا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/mar5.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10107;&nbsp;Chicken musakhan<br>مسخن دجاج</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/6.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.800</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10108;&nbsp;Chicken mushroom<br>مشروم دجاج بيتزا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/chi7.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.800</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10109;&nbsp;Smoked beef pizza<br>بيتزا لحم مدخن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/smo8.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">4.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10110;&nbsp;Seafood pizza<br>بيتزا بحري</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/sea9.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">4.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10111;&nbsp;Smoked chicken pizza<br>بيتزا دجاج مدخن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/smo10.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">4.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10102;&nbsp;Meat pizza<br>بيتزا لحم</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/meat.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.800</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10103;&nbsp;Cheetos chicken<br>بيتزا دجاج شيتوز</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pie/che2.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.800</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                  <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10104;&nbsp;Butter chicken<br>بيتزا دجاج بالزبدة</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="pie/but6.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.800</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                   <span class="w3-left w3-margin-left">&#10102;&#10105;&nbsp;Pesto pizza<br>بيستو بيتزا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="piz/pes6.png" style="width: 90px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 5px;">3.500</span>
+                  <br>
+                  <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">إظافة دجاج | 0.500+</span>
+                  <br>
+                </h>
+                                
+                
+                <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--11-Rai (id11)-->
+<div class="container">
+  <img class="w3-round-large" src="rai.png" onclick="document.getElementById('id11').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="rai" onclick="document.getElementById('id11').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">ريزوتو</div>
+
+    <div id="id11" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id11').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+
+               <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;Shrimp risotto<br>ريزوتو روبيان</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/shr1.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp;Saffron chicken risotto<br>زعفران ريزوتو دجاج</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/saf2.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.000</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;Pesto chicken risotto<br>بيستو ريزوتو دجاج</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/pes3.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">3.000</span>
+                  <br>
+                  <br>
+                </h>
+              
+
+                
+
+              <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--10-Breakfast (id10)-->
+<div class="container">
+  <img class="w3-round-large" src="bre.png" onclick="document.getElementById('id10').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="bre" onclick="document.getElementById('id10').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">وجبات الإفطار</div>
+
+    <div id="id10" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+
+                  <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;Egg with tomato sauce<br>بيض مع صلصة الطماطم </span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/1.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">1.500</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    جبن الموزريلا الطازج مع خلطة الطماطم والبيبروني والخبز الطازج<br>Fresh mozzarella cheese with a mixture of tomatoes and pepproni and fresh bread</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp;Pepperoni mozzarella<br>الببروني مع الموزريلا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/2.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">1.500</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    جبن الموزريلا الطازج مع خلطة الطماطم والبيبروني والخبز الطازج<br>Fresh mozzarella cheese with a mixture of tomatoes and pepproni and fresh bread</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;Egg pepperoni<br>بيض مع الببروني والمزريلا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/3.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">1.500</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    جبنة الموزريلا الطازجة مع البيض والببروني<br>Fresh mozzarella cheese with eggs and pepproni</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10105;&nbsp;Chicken liver platter<br>طبق كبدة الدجاج</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/4.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">1.800</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    طبق الدجاج المشوي الطازج<br>Fresh grilled chicken platter</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                 <h>
+                  <span class="w3-left w3-margin-left">&#10106;&nbsp;Grilled chicken platter<br>طبق الدجاج المشوي</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/5.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">1.800</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    طبق كبد الدجاج الطازج مع دبس الرمان<br>Fresh chicken liver dish with pomegranat molasses</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10107;&nbsp;Chicken musakhan<br>طبق مسخن الدجاج</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/6.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">1.800</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    طبق مسخن الدجاج الطازج مع دبس الرمان<br>Chicken musakhan with pomgranate molasses</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+
+                </h>
+                <hr>
+
+                                <h>
+                  <span class="w3-left w3-margin-left">&#10108;&nbsp;Minced meat platter<br>طبق لحم مفروم</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/7.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">1.800</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    طبق لحم مفروم طازج مع الرمان<br>Fresh minced meat platter with pomgranate </p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10109;&nbsp;Pesto eggs with cheese<br>صينية بيض عيون</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/8.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    خبز البريوش مع بيض البيستو بصوص الجبن<br>Brioche bread with pesto and cheese sause</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+
+                </h>
+                <hr>
+
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10110;&nbsp;Traffil eggs with cheese<br>بيض الترفيل بالجبن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/9.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">2.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    خبز البريوش مع بيض الترفيل بصوص الجبن<br>Brioche bread with Traffil eggs and cheese sause</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10111;&nbsp;Sunny eggs tray<br>صينية بيض عيون</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/111.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">4.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    صينية بيض عيون مع الشاي و فطيرة الجبن<br>Sunny eggs tray with tea and cheese pie</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10102;&nbsp;Shakshuka egg tray<br>صينية بيض شكشوك</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/222.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">4.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    صينية بيض شكشوكة مع الشاي وفطيرة الجبن<br>Shakshuka egg tray with tea and cheese pie</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10103;&nbsp;Meat tray<br>صينية اللحوم</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="bre/333.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 20px;">4.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 20px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4" style="width:250px;border-radius: 20px 5px;background-color:#e3e3ee">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    صينية اللحوم ومع الشاي وفطيرة الجبن<br>Meat tray with tea and cheese pie</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+                </h>
+                <hr>
+
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10104;&nbsp;Simit pepperoni<br>سميد ببروني</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/1.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4 " style="width:250px;border-radius: 20px 5px;background-color: #e3e3ee ;">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    سميد الببروني مع صوص هاني ماستر والزيتون الطازج<br>Simit pepperoni with honey mustard sause and fresh olives</p>
+                  </div>
+                </div>
+              </div>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10105;&nbsp;Chicken musakhan<br>سميد دجاج مسخن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/2.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4 " style="width:250px;border-radius: 20px 5px;background-color: #e3e3ee ;">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    سميد دجاج مسخن مع لبنه وزعتر<br>Simit chicken musakhan with labneh and thyme</p>
+                  </div>
+                </div>
+              </div>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10106;&nbsp;Smoked chicken simit<br>سميد دجاج مدخن</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/3.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4 " style="width:250px;border-radius: 20px 5px;background-color: #e3e3ee ;">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    سميد دجاج مدخن مع صوص هاني ماسترد<br>Smoked chicken Simit with honey mustrad sauce</p>
+                  </div>
+                </div>
+              </div>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10107;&nbsp;Grilled chicken simit<br>سميد الدجاج المشوي</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/4.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4 " style="width:250px;border-radius: 20px 5px;background-color: #e3e3ee ;">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    سميد الدجاج المشوي مع صوص الجبن الاحمر والزيتون الطازج<br>Grilled chicken Simit with red cheese sauce and fresh olives</p>
+                  </div>
+                </div>
+              </div>
+                  <br>
+                  <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&#10108;&nbsp;Simit eggs, labneh and thyme<br>سميد بيض لبنه وزعتر</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="rai/5.png" style="width: 80px;border-radius: 15px 2px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">2.000</span>
+                  <div class="w3-dropdown-hover w3-left w3-margin-left"><span class="lang w3-tag w3-text-black " style="background-color:#e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="dec">الوصف</span>
+                <div class="w3-dropdown-content w3-card-4 " style="width:250px;border-radius: 20px 5px;background-color: #e3e3ee ;">
+                  <div class="w3-container">
+                    <p class="w3-tiny">
+                      <br>
+                    سميد بيض مع لبنه وزعتر<br>Simit eggs with labneh and thyme</p>
+                  </div>
+                </div>
+              </div>
+                  <br>
+                  <br>
+                </h>
+                
+                
+                <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--4-Coffee (id04)-->
+<div class="container">
+  <img class="w3-round-large" src="cof.png" onclick="document.getElementById('id04').style.display='block'" style="width:100px;cursor:pointer;border-radius: 15px 5px;box-shadow: 4px 4px black;">
+
+  <div class="lang centered w3-text-black w3-tiny" key="cof" onclick="document.getElementById('id04').style.display='block'" style="width:100px;cursor:pointer;font-weight: bold;font-family: Apple Chancery;">القهوة</div>
+
+    <div id="id04" class="w3-modal">
+    <div class="w3-modal-content w3-round-large" style="background-color:black">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright w3-round-large w3-xlarge" style="background-color:red;">&times;</span>
+        <br>
+
+
+
+              <br>
+                <h>
+                  <span class="w3-left w3-margin-left">&#10102;&nbsp;Spanish Latte<br>اسبنش لاتيه</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/col/spa1.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.800</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="hc">بارد / ساخن</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                 <h>
+                  <span class="w3-left w3-margin-left">&#10103;&nbsp; Latte<br> لاتيه</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/col/spa1.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                                    <br>
+                  <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.600</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="hc">بارد / ساخن</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10104;&nbsp;White Mocha <br> وايت موكا</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/col/moc3.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.800</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="c">بارد</span>
+                  <br>
+                  <br>
+
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10105;&nbsp;Ice Americano <br> آيس امريكانو</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/col/amr4.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                                    <br>
+                  <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.200</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="c">بارد</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10106;&nbsp;Piccolo<br>بيكولو</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/hot/pic1.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                                    <br>
+                  <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.500</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="h">ساخن</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                 <h>
+                  <span class="w3-left w3-margin-left">&#10107;&nbsp;Classic Curtado<br>كلاسيك كورتادو</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/hot/cur2.png" style="width: 65px;border-radius: 15px 2px;margin-top: 15px;"> 
+                                    <br>
+                  <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.800</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="h">ساخن</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10108;&nbsp;Flat White<br>فلات وايت</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/hot/fla3.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                    <br>
+                    <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.800</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="h">ساخن</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                 <h>
+                  <span class="w3-left w3-margin-left">&#10109;&nbsp;Espresso<br>اسبريسو</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/hot/esp4.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                                    <br>
+                  <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.000</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="h">ساخن</span>
+                  <br>
+                  <br>
+                </h>
+                <hr>
+
+                <h>
+                  <span class="w3-left w3-margin-left">&#10110;&nbsp;Black Coffee<br>بلاك كوفي</span>
+                  <img class="w3-margin-right w3-right w3-round-large" src="cof/hot/bla5.png" style="width: 70px;border-radius: 15px 2px;margin-top: 15px;"> 
+                                    <br>
+                  <br>
+                  <span class="w3-left w3-margin-left w3-tag w3-round w3-text-black" style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;">1.200</span>
+                  <span class="lang w3-left w3-margin-left w3-tag w3-round w3-text-black " style="background-color: #e3e3ee;border-radius:7px 2px;margin-top: 15px;" key="h">ساخن</span>
+                  <br>
+                  <br>
+                </h>
+                
+                
+                <br>
+
+
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<br>
+</div>  
+</div>
+
+        
+  <p class="w3-tiny w3-serif">&copy; Designed by : <a href="https://www.instagram.com/pixelab_dev/"><img class="w3-round" src="images/pixelab.png" style="width:50px"></a></p>
+
+						
+					</footer>
+
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+         //Translation Javascript
+var arrLang = new Array();
+    arrLang['en'] = new Array();
+    arrLang['ar'] = new Array();
+
+// English content 
+arrLang['en']['ord'] = '     Click to Order';
+arrLang['en']['cof'] = '     Coffee';
+arrLang['en']['swe'] = '     Sweets';
+arrLang['en']['app'] = '     Appetizers';
+arrLang['en']['pas'] = '     Pastries';
+arrLang['en']['piz'] = '     Pizzeria';
+arrLang['en']['bre'] = '     Breakfast';
+arrLang['en']['rai'] = '     Risotto';
+arrLang['en']['pie'] = '     Pie';
+
+arrLang['en']['hc'] = '     Cold / Hot';
+arrLang['en']['c'] = '      Cold';
+arrLang['en']['h'] = '      Hot';
+
+arrLang['en']['dec'] = '    Description';
+arrLang['en']['add'] = '    Add Chicken | 0.500';
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+//Arabic content
+arrLang['ar']['ord'] = '   إضغط للطلب';
+arrLang['ar']['cof'] = '    القهوة';
+arrLang['ar']['swe'] = '    الحلويات';
+arrLang['ar']['app'] = '    المقبلات';
+arrLang['ar']['pas'] = '     الباستا';
+arrLang['ar']['piz'] = '     البيتزا';
+arrLang['ar']['aft'] = '     شاي العصر';
+arrLang['ar']['bre'] = '     وجبات الإفطار';
+arrLang['ar']['rai'] = '     ريزوتو';
+arrLang['ar']['pie'] = '     الفطائر';
+
+arrLang['ar']['hc'] = '     بارد / ساخن';
+arrLang['ar']['c'] = '     بارد';
+arrLang['ar']['h'] = '      ساخن';
+
+arrLang['ar']['dec'] = '      الوصف';
+
+arrLang['ar']['add'] = '    إظافة دجاج | 0.500';
+
+
+
+
+
+
+// Process translation
+    $(function() {
+      $('.translate').click(function() {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function(index, item) {
+          $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+      });
+    });
+
+
+//accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+//accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+
+			</script>
+
+	</body>
+</html>
